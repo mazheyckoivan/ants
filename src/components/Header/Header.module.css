@@ -1,0 +1,17 @@
+.header {
+  padding: 0.5rem 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.header img {
+  width: 151px;
+}
+
+.header .titleContainer {
+  text-align: center;
+  line-height: 1;
+}
