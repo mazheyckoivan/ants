@@ -11,6 +11,7 @@ import {
   useTheme,
 } from "@mui/material";
 import { Box } from "@mui/system";
+import { SRLWrapper } from "simple-react-lightbox";
 import { Quiz1, Quiz2, Quiz3, Quiz4 } from "../../assets";
 
 const Quiz = () => {
@@ -77,7 +78,7 @@ const Quiz = () => {
                 <img
                   style={{ borderRadius: 2 }}
                   src={Quiz1}
-                  alt="quiz"
+                  alt="Анкетирование сверстников"
                   loading="lazy"
                 />
               </ImageListItem>
@@ -86,7 +87,7 @@ const Quiz = () => {
                 <img
                   style={{ borderRadius: 2 }}
                   src={Quiz2}
-                  alt="quiz"
+                  alt="Анкетирование сверстников"
                   loading="lazy"
                 />
               </ImageListItem>
@@ -95,7 +96,7 @@ const Quiz = () => {
                 <img
                   style={{ borderRadius: 2 }}
                   src={Quiz3}
-                  alt="quiz"
+                  alt="Анкетирование сверстников"
                   loading="lazy"
                 />
               </ImageListItem>
@@ -105,7 +106,7 @@ const Quiz = () => {
                   <img
                     style={{ borderRadius: 2 }}
                     src={Quiz4}
-                    alt="quiz"
+                    alt="Анкетирование сверстников"
                     loading="lazy"
                   />
                 </ImageListItem>

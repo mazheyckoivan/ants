@@ -30,7 +30,7 @@ const AdditionalSources = () => {
             <CardMedia
               component="img"
               height="140"
-              sx={{ objectFit: "cover" }}
+              sx={{ objectFit: "cover", pointerEvents: "none" }}
               image={Link1}
               alt="boy"
             />
@@ -57,7 +57,7 @@ const AdditionalSources = () => {
             <CardMedia
               component="img"
               height="140"
-              sx={{ objectFit: "cover" }}
+              sx={{ objectFit: "cover", pointerEvents: "none" }}
               image={Link2}
               alt="boy"
             />
@@ -84,7 +84,7 @@ const AdditionalSources = () => {
             <CardMedia
               component="img"
               height="140"
-              sx={{ objectFit: "cover" }}
+              sx={{ objectFit: "cover", pointerEvents: "none" }}
               image={Link3}
               alt="boy"
             />
@@ -111,7 +111,7 @@ const AdditionalSources = () => {
             <CardMedia
               component="img"
               height="140"
-              sx={{ objectFit: "cover" }}
+              sx={{ objectFit: "cover", pointerEvents: "none" }}
               image={Link4}
               alt="boy"
             />

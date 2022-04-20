@@ -5,6 +5,7 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
+import { SRLWrapper } from "simple-react-lightbox";
 import { SummaryPhoto } from "./assets";
 import AdditionalSources from "./components/AdditionalSources";
 import AntSpecies from "./components/AntSpecies";
@@ -24,50 +25,52 @@ const App = () => {
 
   return (
     <div className="App">
-      <Background />
+      <SRLWrapper>
+        <Background />
 
-      <Header />
+        <Header />
 
-      {matches && (
-        <Container
-          maxWidth="lg"
-          disableGutters={matches}
-          id="additional-sources"
-        >
-          <Card
-            sx={{
-              marginY: "1rem",
-              borderRadius: "unset",
-            }}
+        {matches && (
+          <Container
+            maxWidth="lg"
+            disableGutters={matches}
+            id="additional-sources"
           >
-            <CardMedia
-              component="img"
-              sx={{ objectFit: "cover", flex: 1 }}
-              src={SummaryPhoto}
-              width={"100%"}
-              alt="boy"
-            />
-          </Card>
-        </Container>
-      )}
+            <Card
+              sx={{
+                marginY: "1rem",
+                borderRadius: "unset",
+              }}
+            >
+              <CardMedia
+                component="img"
+                sx={{ objectFit: "cover", flex: 1 }}
+                src={SummaryPhoto}
+                width={"100%"}
+                alt="Вступление"
+              />
+            </Card>
+          </Container>
+        )}
 
-      <Summary />
+        <Summary />
 
-      <Quiz />
+        <Quiz />
 
-      <QuizResult />
+        <QuizResult />
 
-      <Theory />
+        <Theory />
 
-      <AntSpecies />
+        <AntSpecies />
 
-      <Practice />
+        <Practice />
 
-      <Finally />
+        <Finally />
 
-      <AdditionalSources />
+        <AdditionalSources />
 
-      <Footer />
+        <Footer />
+      </SRLWrapper>
     </div>
   );
 };
