@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ants/static/css/main.f05feccb.css",
-    "main.js": "/ants/static/js/main.fb54bb9f.js",
+    "main.js": "/ants/static/js/main.9869dcde.js",
     "static/media/summary-photo.png": "/ants/static/media/summary-photo.4728b271f334701fc427.png",
     "static/media/quiz-1.png": "/ants/static/media/quiz-1.99cbc1a1e1251259316e.png",
     "static/media/f-1.png": "/ants/static/media/f-1.b152c179177925810803.png",
@@ -38,10 +38,10 @@
     "static/media/link-4.png": "/ants/static/media/link-4.f85702c00ac96b2d223d.png",
     "index.html": "/ants/index.html",
     "main.f05feccb.css.map": "/ants/static/css/main.f05feccb.css.map",
-    "main.fb54bb9f.js.map": "/ants/static/js/main.fb54bb9f.js.map"
+    "main.9869dcde.js.map": "/ants/static/js/main.9869dcde.js.map"
   },
   "entrypoints": [
     "static/css/main.f05feccb.css",
-    "static/js/main.fb54bb9f.js"
+    "static/js/main.9869dcde.js"
   ]
 }
