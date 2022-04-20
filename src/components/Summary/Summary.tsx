@@ -11,29 +11,36 @@ import {
   ListItemButton,
   ListItemText,
   Typography,
+  useMediaQuery,
+  useTheme,
 } from "@mui/material";
 
 import SummaryPhoto from "../../assets/summary-photo.png";
 
-import styles from "./Summary.module.css";
-
 const Summary = () => {
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.down("sm"));
+
   return (
-    <Container maxWidth="lg" id="summary">
+    <Container maxWidth="lg" disableGutters={matches} id="summary">
       <Card
         sx={{
           display: "flex",
+
           gap: "1rem",
           minHeight: "50vh",
           marginY: "1rem",
+          borderRadius: `${matches ? "unset" : theme.shape.borderRadius}`,
         }}
       >
-        <CardMedia
-          component="img"
-          sx={{ maxWidth: "30%", objectFit: "cover", flex: 1 }}
-          image={SummaryPhoto}
-          alt="boy"
-        />
+        {!matches && (
+          <CardMedia
+            component="img"
+            sx={{ maxWidth: "30%", objectFit: "cover", flex: 1 }}
+            src={SummaryPhoto}
+            alt="boy"
+          />
+        )}
 
         <Box sx={{ flex: 5 }}>
           <CardContent>

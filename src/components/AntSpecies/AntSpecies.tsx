@@ -5,17 +5,20 @@ import {
   CardContent,
   Container,
   Typography,
+  useMediaQuery,
+  useTheme,
 } from "@mui/material";
-import React from "react";
 
-type Props = {};
+const AntSpecies = () => {
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.down("sm"));
 
-const AntSpecies = (props: Props) => {
   return (
-    <Container maxWidth="lg" id="ant-species">
+    <Container maxWidth="lg" disableGutters={matches} id="ant-species">
       <Card
         sx={{
           marginY: "1rem",
+          borderRadius: `${matches ? "unset" : theme.shape.borderRadius}`,
         }}
       >
         <AppBar position="relative" sx={{ padding: "1rem" }}>

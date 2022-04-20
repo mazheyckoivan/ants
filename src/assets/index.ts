@@ -34,3 +34,5 @@ export { default as F1 } from "./f-1.png";
 export { default as F2 } from "./f-2.png";
 export { default as F3 } from "./f-3.png";
 export { default as F4 } from "./f-4.png";
+
+export { default as SummaryPhoto } from "./summary-photo.png";

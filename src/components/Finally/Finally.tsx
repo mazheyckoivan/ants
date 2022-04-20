@@ -7,17 +7,23 @@ import {
   ImageList,
   ImageListItem,
   Typography,
+  useMediaQuery,
+  useTheme,
 } from "@mui/material";
 import { Box } from "@mui/system";
 import { F1, F2, F3, F4 } from "../../assets";
 
 const Finally = () => {
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.down("sm"));
+
   return (
-    <Container maxWidth="lg" id="finally">
+    <Container maxWidth="lg" disableGutters={matches} id="finally">
       <Card
         sx={{
           display: "flex",
           marginY: "1rem",
+          borderRadius: `${matches ? "unset" : theme.shape.borderRadius}`,
         }}
       >
         <Box>
@@ -99,16 +105,29 @@ const Finally = () => {
                   loading="lazy"
                 />
               </ImageListItem>
+
+              {matches && (
+                <ImageListItem>
+                  <img
+                    style={{ borderRadius: 2 }}
+                    src={F4}
+                    alt="quiz"
+                    loading="lazy"
+                  />
+                </ImageListItem>
+              )}
             </ImageList>
           </CardContent>
         </Box>
 
-        <CardMedia
-          component="img"
-          sx={{ objectFit: "cover" }}
-          image={F4}
-          alt="boy"
-        />
+        {!matches && (
+          <CardMedia
+            component="img"
+            sx={{ objectFit: "cover" }}
+            image={F4}
+            alt="boy"
+          />
+        )}
       </Card>
     </Container>
   );

@@ -7,18 +7,24 @@ import {
   ImageList,
   ImageListItem,
   Typography,
+  useMediaQuery,
+  useTheme,
 } from "@mui/material";
 import { Box } from "@mui/system";
 import { Quiz1, Quiz2, Quiz3, Quiz4 } from "../../assets";
 
 const Quiz = () => {
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.down("sm"));
+
   return (
-    <Container maxWidth="lg" id="quiz">
+    <Container maxWidth="lg" disableGutters={matches} id="quiz">
       <Card
         sx={{
           minHeight: "50vh",
           marginY: "1rem",
           display: "flex",
+          borderRadius: `${matches ? "unset" : theme.shape.borderRadius}`,
         }}
       >
         <Box>
@@ -27,7 +33,7 @@ const Quiz = () => {
               Анкетирование сверстников
             </Typography>
 
-            <Box padding={3} sx={{}}>
+            <Box padding={matches ? 2 : 3} sx={{}}>
               <Typography variant="body1">
                 Когда в школе мы изучали насекомых на уроке человек и мир, меня
                 очень заинтересовали муравьи. Я не знал, что бывают садовые
@@ -37,12 +43,22 @@ const Quiz = () => {
                 муравьиную ферму. Мы долго искали, где же можно приобрести
                 муравьиную ферму и колонию муравьев. Нашли специальный магазин и
                 купили формикарий и колонию муравьев. Я выбрал именно этот вид,
-                потому что они считаются гипоаллергенными и простыми в уходе. Из
-                разных источников я узнал, как ухаживать за муравьями.
+                потому что они считаются гипоаллергенными и простыми в уходе.
+              </Typography>
+
+              <br />
+
+              <Typography variant="body1">
+                Из разных источников я узнал, как ухаживать за муравьями.
                 Необходимо выполнять следующие правила: непрерывно увлажнять
-                муравьиную ферму, правильно кормить, оградить от стресса. После
-                покупки муравьиной фермы, я решил поделиться этим событием со
-                своими одноклассниками. Многие из них не знали, что можно
+                муравьиную ферму, правильно кормить, оградить от стресса.
+              </Typography>
+
+              <br />
+
+              <Typography variant="body1">
+                После покупки муравьиной фермы, я решил поделиться этим событием
+                со своими одноклассниками. Многие из них не знали, что можно
                 содержать дома муравьев. Тогда мне стало интересно, сколько моих
                 сверстников знают о том, что можно выращивать муравьев в
                 домашних условиях. С помощью моей учительницы мы разработали
@@ -52,7 +68,11 @@ const Quiz = () => {
               </Typography>
             </Box>
 
-            <ImageList cols={3} rowHeight={250} sx={{ margin: 0 }}>
+            <ImageList
+              cols={matches ? 2 : 3}
+              rowHeight={250}
+              sx={{ margin: 0 }}
+            >
               <ImageListItem>
                 <img
                   style={{ borderRadius: 2 }}
@@ -79,16 +99,29 @@ const Quiz = () => {
                   loading="lazy"
                 />
               </ImageListItem>
+
+              {matches && (
+                <ImageListItem>
+                  <img
+                    style={{ borderRadius: 2 }}
+                    src={Quiz4}
+                    alt="quiz"
+                    loading="lazy"
+                  />
+                </ImageListItem>
+              )}
             </ImageList>
           </CardContent>
         </Box>
 
-        <CardMedia
-          component="img"
-          sx={{ maxWidth: "30%", objectFit: "fill" }}
-          image={Quiz4}
-          alt="boy"
-        />
+        {!matches && (
+          <CardMedia
+            component="img"
+            sx={{ maxWidth: "30%", objectFit: "fill" }}
+            image={Quiz4}
+            alt="boy"
+          />
+        )}
       </Card>
     </Container>
   );

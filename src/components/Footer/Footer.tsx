@@ -7,7 +7,7 @@ const Footer = () => {
     <AppBar position="static" className={styles.footer}>
       <Container maxWidth="xl">
         <Typography variant="h5">
-          Пойдём вместе исследовать этот увлекательный мир!
+          Пойдём вместе исследовать этот увлекательный мир!!!
         </Typography>
       </Container>
     </AppBar>

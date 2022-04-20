@@ -4,6 +4,8 @@ import {
   CardContent,
   Container,
   Typography,
+  useMediaQuery,
+  useTheme,
 } from "@mui/material";
 import { Box } from "@mui/system";
 import { Bar } from "react-chartjs-2";
@@ -48,12 +50,16 @@ const chartData = {
 };
 
 const QuizResult = () => {
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.down("sm"));
+
   return (
-    <Container maxWidth="lg" id="quiz-result">
+    <Container maxWidth="lg" disableGutters={matches} id="quiz-result">
       <Card
         sx={{
           minHeight: "50vh",
           marginY: "1rem",
+          borderRadius: `${matches ? "unset" : theme.shape.borderRadius}`,
         }}
       >
         <AppBar position="relative" sx={{ padding: "1rem" }}>

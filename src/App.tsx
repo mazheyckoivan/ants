@@ -1,3 +1,11 @@
+import {
+  Card,
+  CardMedia,
+  Container,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
+import { SummaryPhoto } from "./assets";
 import AdditionalSources from "./components/AdditionalSources";
 import AntSpecies from "./components/AntSpecies";
 import Background from "./components/Background";
@@ -11,11 +19,37 @@ import Summary from "./components/Summary/Summary";
 import Theory from "./components/Theory";
 
 const App = () => {
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.down("sm"));
+
   return (
     <div className="App">
       <Background />
 
       <Header />
+
+      {matches && (
+        <Container
+          maxWidth="lg"
+          disableGutters={matches}
+          id="additional-sources"
+        >
+          <Card
+            sx={{
+              marginY: "1rem",
+              borderRadius: "unset",
+            }}
+          >
+            <CardMedia
+              component="img"
+              sx={{ objectFit: "cover", flex: 1 }}
+              src={SummaryPhoto}
+              width={"100%"}
+              alt="boy"
+            />
+          </Card>
+        </Container>
+      )}
 
       <Summary />
 

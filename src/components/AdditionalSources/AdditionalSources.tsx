@@ -6,18 +6,23 @@ import {
   Container,
   Stack,
   Typography,
+  useMediaQuery,
+  useTheme,
 } from "@mui/material";
 
 import { Link1, Link2, Link3, Link4 } from "../../assets";
 
 const AdditionalSources = () => {
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.down("sm"));
+
   return (
-    <Container maxWidth="lg" id="additional-sources">
+    <Container maxWidth="lg" disableGutters={matches} id="additional-sources">
       <Stack
-        direction="row"
+        direction={{ xs: "column", sm: "row" }}
+        spacing={{ xs: 1, sm: 2, md: 4 }}
         alignItems="stretch"
         justifyContent="space-between"
-        spacing={2}
         sx={{ marginY: "1rem" }}
       >
         <Card>

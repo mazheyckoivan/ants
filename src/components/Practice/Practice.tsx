@@ -8,6 +8,8 @@ import {
   ImageList,
   ImageListItem,
   Typography,
+  useMediaQuery,
+  useTheme,
 } from "@mui/material";
 import {
   P11,
@@ -32,11 +34,15 @@ import {
 } from "../../assets";
 
 const Practice = () => {
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.down("sm"));
+
   return (
-    <Container maxWidth="lg" id="practice">
+    <Container maxWidth="lg" disableGutters={matches} id="practice">
       <Card
         sx={{
           marginY: "1rem",
+          borderRadius: `${matches ? "unset" : theme.shape.borderRadius}`,
         }}
       >
         <AppBar position="relative" sx={{ padding: "1rem" }}>
@@ -46,7 +52,7 @@ const Practice = () => {
         </AppBar>
 
         <CardContent>
-          <Box padding={2}>
+          <Box padding={matches ? 0 : 2}>
             <Typography variant="body1">
               Для того, чтобы создать памятку по уходу за муравьями-жнецами в
               домашних условиях, мне необходимо было провести эксперименты. На
@@ -56,9 +62,10 @@ const Practice = () => {
             </Typography>
 
             <br />
-            <Divider variant="middle">
+            <Divider variant="middle" sx={{ whiteSpace: "pre-wrap" }}>
               <Typography variant="h5" textAlign="center" id="practice1">
-                Эксперимент 1. Заселение муравьев в муравьиную ферму.
+                <span style={{ whiteSpace: "nowrap" }}>Эксперимент 1:</span>{" "}
+                Заселение муравьев в муравьиную ферму.
               </Typography>
             </Divider>
             <br />
@@ -174,9 +181,14 @@ const Practice = () => {
             </Typography>
 
             <br />
-            <Divider variant="middle" id="practice2">
+            <Divider
+              variant="middle"
+              id="practice2"
+              sx={{ whiteSpace: "pre-wrap" }}
+            >
               <Typography variant="h5" textAlign="center">
-                Эксперимент 2. Предпочтения в питании и развитие муравьев.
+                <span style={{ whiteSpace: "nowrap" }}>Эксперимент 2:</span>{" "}
+                Предпочтения в питании и развитие муравьев.
               </Typography>
             </Divider>
             <br />
@@ -257,10 +269,14 @@ const Practice = () => {
             </Typography>
 
             <br />
-            <Divider variant="middle" id="practice3">
+            <Divider
+              variant="middle"
+              id="practice3"
+              sx={{ whiteSpace: "pre-wrap" }}
+            >
               <Typography variant="h5" textAlign="center">
-                Эксперимент 3. Влияние температуры воздуха на поведение
-                муравьев.
+                <span style={{ whiteSpace: "nowrap" }}>Эксперимент 3:</span>{" "}
+                Влияние температуры воздуха на поведение муравьев.
               </Typography>
             </Divider>
             <br />
@@ -315,9 +331,14 @@ const Practice = () => {
             </Typography>
 
             <br />
-            <Divider variant="middle" id="practice3">
+            <Divider
+              variant="middle"
+              id="practice3"
+              sx={{ whiteSpace: "pre-wrap" }}
+            >
               <Typography variant="h5" textAlign="center">
-                Эксперимент 4. Влияние яркого света на поведение муравьев.
+                <span style={{ whiteSpace: "nowrap" }}>Эксперимент 4:</span>{" "}
+                Влияние яркого света на поведение муравьев.
               </Typography>
             </Divider>
             <br />
