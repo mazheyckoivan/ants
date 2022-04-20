@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ants/static/css/main.417d5c26.css",
-    "main.js": "/ants/static/js/main.a785d999.js",
+    "main.css": "/ants/static/css/main.f05feccb.css",
+    "main.js": "/ants/static/js/main.fb54bb9f.js",
     "static/media/summary-photo.png": "/ants/static/media/summary-photo.4728b271f334701fc427.png",
     "static/media/quiz-1.png": "/ants/static/media/quiz-1.99cbc1a1e1251259316e.png",
     "static/media/f-1.png": "/ants/static/media/f-1.b152c179177925810803.png",
@@ -24,24 +24,24 @@
     "static/media/p2-2.png": "/ants/static/media/p2-2.e64e590a958795d91737.png",
     "static/media/p2-4.png": "/ants/static/media/p2-4.b72501c56efc6471dc93.png",
     "static/media/p2-5.png": "/ants/static/media/p2-5.91338bb99298329775dc.png",
-    "static/media/link-1.png": "/ants/static/media/link-1.3c2588929c252b7714f1.png",
-    "static/media/link-3.png": "/ants/static/media/link-3.292a55e1d5e2ac364343.png",
     "static/media/p3-1.png": "/ants/static/media/p3-1.6bd52132f127143108b8.png",
     "static/media/p4-1.png": "/ants/static/media/p4-1.9437e50282d6c87bd6c3.png",
     "static/media/p4-2.png": "/ants/static/media/p4-2.235326372f04a5673d26.png",
     "static/media/p3-2.png": "/ants/static/media/p3-2.60e716f49eebe28409d0.png",
-    "static/media/link-4.png": "/ants/static/media/link-4.e78ef9f38fed1928cc46.png",
     "static/media/p3-3.png": "/ants/static/media/p3-3.de178fe96d38ed718735.png",
     "static/media/p2-6.png": "/ants/static/media/p2-6.8927be84e74ce4b9d4d0.png",
+    "static/media/link-1.png": "/ants/static/media/link-1.9228c5173342aafb45ce.png",
+    "static/media/link-3.png": "/ants/static/media/link-3.08de4d5eb850f9b83031.png",
+    "static/media/link-2.png": "/ants/static/media/link-2.dce4bb80caea51b0fc0e.png",
     "static/media/quiz-result.png": "/ants/static/media/quiz-result.9f816952f3ed6070b5a5.png",
-    "static/media/link-2.png": "/ants/static/media/link-2.c5036032639371616e8f.png",
     "static/media/logo.png": "/ants/static/media/logo.097f6c77043632c00091.png",
+    "static/media/link-4.png": "/ants/static/media/link-4.f85702c00ac96b2d223d.png",
     "index.html": "/ants/index.html",
-    "main.417d5c26.css.map": "/ants/static/css/main.417d5c26.css.map",
-    "main.a785d999.js.map": "/ants/static/js/main.a785d999.js.map"
+    "main.f05feccb.css.map": "/ants/static/css/main.f05feccb.css.map",
+    "main.fb54bb9f.js.map": "/ants/static/js/main.fb54bb9f.js.map"
   },
   "entrypoints": [
-    "static/css/main.417d5c26.css",
-    "static/js/main.a785d999.js"
+    "static/css/main.f05feccb.css",
+    "static/js/main.fb54bb9f.js"
   ]
 }
