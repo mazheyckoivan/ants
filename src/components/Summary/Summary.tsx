@@ -38,7 +38,7 @@ const Summary = () => {
             component="img"
             sx={{ maxWidth: "30%", objectFit: "cover", flex: 1 }}
             src={SummaryPhoto}
-            alt="boy"
+            alt="Вступление"
           />
         )}
 

@@ -120,7 +120,7 @@ const Quiz = () => {
             component="img"
             sx={{ maxWidth: "30%", objectFit: "fill" }}
             image={Quiz4}
-            alt="boy"
+            alt="Анкетирование сверстников"
           />
         )}
       </Card>

@@ -87,7 +87,7 @@ const Practice = () => {
                 <img
                   style={{ borderRadius: 2 }}
                   src={P11}
-                  alt="quiz"
+                  alt="Эксперимент 1"
                   loading="lazy"
                 />
               </ImageListItem>
@@ -96,7 +96,7 @@ const Practice = () => {
                 <img
                   style={{ borderRadius: 2 }}
                   src={P15}
-                  alt="quiz"
+                  alt="Эксперимент 1"
                   loading="lazy"
                 />
               </ImageListItem>
@@ -105,7 +105,7 @@ const Practice = () => {
                 <img
                   style={{ borderRadius: 2 }}
                   src={P12}
-                  alt="quiz"
+                  alt="Эксперимент 1"
                   loading="lazy"
                 />
               </ImageListItem>
@@ -113,7 +113,7 @@ const Practice = () => {
                 <img
                   style={{ borderRadius: 2 }}
                   src={P13}
-                  alt="quiz"
+                  alt="Эксперимент 1"
                   loading="lazy"
                 />
               </ImageListItem>
@@ -121,7 +121,7 @@ const Practice = () => {
                 <img
                   style={{ borderRadius: 2 }}
                   src={P14}
-                  alt="quiz"
+                  alt="Эксперимент 1"
                   loading="lazy"
                 />
               </ImageListItem>
@@ -129,7 +129,7 @@ const Practice = () => {
                 <img
                   style={{ borderRadius: 2 }}
                   src={P16}
-                  alt="quiz"
+                  alt="Эксперимент 1"
                   loading="lazy"
                 />
               </ImageListItem>
@@ -137,7 +137,7 @@ const Practice = () => {
                 <img
                   style={{ borderRadius: 2 }}
                   src={P17}
-                  alt="quiz"
+                  alt="Эксперимент 1"
                   loading="lazy"
                 />
               </ImageListItem>
@@ -225,7 +225,7 @@ const Practice = () => {
                 <img
                   style={{ borderRadius: 2 }}
                   src={P21}
-                  alt="quiz"
+                  alt="Эксперимент 2"
                   loading="lazy"
                 />
               </ImageListItem>
@@ -233,7 +233,7 @@ const Practice = () => {
                 <img
                   style={{ borderRadius: 2 }}
                   src={P22}
-                  alt="quiz"
+                  alt="Эксперимент 2"
                   loading="lazy"
                 />
               </ImageListItem>
@@ -241,7 +241,7 @@ const Practice = () => {
                 <img
                   style={{ borderRadius: 2 }}
                   src={P23}
-                  alt="quiz"
+                  alt="Эксперимент 2"
                   loading="lazy"
                 />
               </ImageListItem>
@@ -249,7 +249,7 @@ const Practice = () => {
                 <img
                   style={{ borderRadius: 2 }}
                   src={P25}
-                  alt="quiz"
+                  alt="Эксперимент 2"
                   loading="lazy"
                 />
               </ImageListItem>
@@ -257,7 +257,7 @@ const Practice = () => {
                 <img
                   style={{ borderRadius: 2 }}
                   src={P26}
-                  alt="quiz"
+                  alt="Эксперимент 2"
                   loading="lazy"
                 />
               </ImageListItem>
@@ -296,7 +296,7 @@ const Practice = () => {
                 <img
                   style={{ borderRadius: 2 }}
                   src={P31}
-                  alt="quiz"
+                  alt="Эксперимент 3"
                   loading="lazy"
                 />
               </ImageListItem>
@@ -304,7 +304,7 @@ const Practice = () => {
                 <img
                   style={{ borderRadius: 2 }}
                   src={P32}
-                  alt="quiz"
+                  alt="Эксперимент 3"
                   loading="lazy"
                 />
               </ImageListItem>
@@ -312,7 +312,7 @@ const Practice = () => {
                 <img
                   style={{ borderRadius: 2 }}
                   src={P33}
-                  alt="quiz"
+                  alt="Эксперимент 3"
                   loading="lazy"
                 />
               </ImageListItem>
@@ -320,7 +320,7 @@ const Practice = () => {
                 <img
                   style={{ borderRadius: 2 }}
                   src={P34}
-                  alt="quiz"
+                  alt="Эксперимент 3"
                   loading="lazy"
                 />
               </ImageListItem>
@@ -356,7 +356,7 @@ const Practice = () => {
                 <img
                   style={{ borderRadius: 2 }}
                   src={P41}
-                  alt="quiz"
+                  alt="Эксперимент 4"
                   loading="lazy"
                 />
               </ImageListItem>
@@ -364,7 +364,7 @@ const Practice = () => {
                 <img
                   style={{ borderRadius: 2 }}
                   src={P42}
-                  alt="quiz"
+                  alt="Эксперимент 4"
                   loading="lazy"
                 />
               </ImageListItem>

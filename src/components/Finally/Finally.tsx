@@ -85,7 +85,7 @@ const Finally = () => {
                 <img
                   style={{ borderRadius: 2 }}
                   src={F1}
-                  alt="quiz"
+                  alt="Заключение"
                   loading="lazy"
                 />
               </ImageListItem>
@@ -93,7 +93,7 @@ const Finally = () => {
                 <img
                   style={{ borderRadius: 2 }}
                   src={F2}
-                  alt="quiz"
+                  alt="Заключение"
                   loading="lazy"
                 />
               </ImageListItem>
@@ -101,7 +101,7 @@ const Finally = () => {
                 <img
                   style={{ borderRadius: 2 }}
                   src={F3}
-                  alt="quiz"
+                  alt="Заключение"
                   loading="lazy"
                 />
               </ImageListItem>
@@ -111,7 +111,7 @@ const Finally = () => {
                   <img
                     style={{ borderRadius: 2 }}
                     src={F4}
-                    alt="quiz"
+                    alt="Заключение"
                     loading="lazy"
                   />
                 </ImageListItem>
@@ -125,7 +125,7 @@ const Finally = () => {
             component="img"
             sx={{ objectFit: "cover" }}
             image={F4}
-            alt="boy"
+            alt="Заключение"
           />
         )}
       </Card>
